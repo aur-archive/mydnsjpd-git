@@ -1,0 +1,21 @@
+pkgbase = mydnsjpd-git
+	pkgdesc = DNS record updater for MyDNS.jp
+	pkgver = r30.b88750d
+	pkgrel = 1
+	url = https://github.com/pfpacket/mydnsjpd
+	install = mydnsjpd.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = boost
+	depends = gcc>=4.6.0
+	depends = boost-libs
+	provides = mydnsjpd
+	backup = etc/mydnsjpd.conf
+	source = mydnsjpd-git::git://github.com/pfpacket/mydnsjpd.git
+	source = mydnsjpd.service
+	md5sums = SKIP
+	md5sums = 4254c080ec417fd6d15fcf44fb46cfd0
+
+pkgname = mydnsjpd-git
+

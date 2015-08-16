@@ -1,0 +1,16 @@
+# arg 1:  the new package version
+# arg 2:  the old package version
+
+# set a sane PATH to ensure that critical utils like depmod will be found
+export PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+
+post_install()
+{
+    echo "mydnsjpd configuration file installed at /etc/mydnsjpd.conf"
+    echo "Please edit it for your configuration later"
+}
+
+post_upgrade()
+{
+    echo "Please merge the new configuration file"
+}
